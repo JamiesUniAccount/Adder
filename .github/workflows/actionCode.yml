@@ -1,0 +1,11 @@
+
+
+name: Run a single maven test class
+run: mvn test -Dtest=AdderTest
+
+name: Run a single maven test
+run: mvn test -Dtest=AdderTest#shouldAddTwoNumbers
+
+# r and n lined up make sure
+# AdderTest is the class name not the file name. Dont include the file extension.
+# To run a specific test from a file write className#testName
